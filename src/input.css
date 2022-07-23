@@ -1,0 +1,28 @@
+.enterCity{
+    padding: 10px;
+}
+
+#submitButton{
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+    width: 100%;
+    font-family: Roboto, serif;
+    font-weight: bold;
+    background-color: #a8adaa;
+}
+
+#myText{
+    margin-top: 2%;
+    border-radius: 7px;
+    background-color: #a8adaa;
+    font-family: "Segoe UI", serif;
+}
+
+#myText:hover{
+    cursor: text;
+}
+
+#submitButton:hover{
+    cursor: pointer;
+}

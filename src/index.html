@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Forecast</title>
+        <link href="weather.css" type="text/css" rel="stylesheet">
+        <link href="input.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div id="dateTimeWeatherContainer">
+                    <div id="dateTime">
+                        <time id="timer"></time>
+                        <p id="date"></p>
+                        <script src="dateTime.js"></script>
+                    </div>
+
+                    <div class="weather">
+                        <p class="weatherOutput">
+                            <span id="country">.</span>
+                            <span id="city">.</span>
+                            <span id="temperature">.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <form class="enterCity">
+                    <label id="myLabel" for="myText">Enter your city</label><br>
+                    <input id="myText" type="text" name="city"><br>
+                    <input id="submitButton" type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
