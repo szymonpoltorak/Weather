@@ -1,28 +1,40 @@
-.enterCity{
-    padding: 10px;
-}
-
-#submitButton{
-    padding: 5px;
-    margin-top: 5px;
-    border-radius: 7px;
-    width: 100%;
+.submit{
+    margin: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
     font-family: Roboto, serif;
     font-weight: bold;
     background-color: #a8adaa;
+    outline: none;
+    border: none;
 }
 
-#myText{
-    margin-top: 2%;
-    border-radius: 7px;
-    background-color: #a8adaa;
+.enterCity{
+    width: 400px;
+}
+
+.myText{
+    width: 70%;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background-color: #7c7c7c2b;
     font-family: "Segoe UI", serif;
+    outline: none;
 }
 
-#myText:hover{
+.myText:hover{
     cursor: text;
 }
 
-#submitButton:hover{
+.submit:hover{
     cursor: pointer;
+    background-color: #959696;
+}
+
+.submit:after{
+    cursor: pointer;
+    background-color: #95a696;
 }
