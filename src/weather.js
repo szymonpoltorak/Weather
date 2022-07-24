@@ -12,9 +12,11 @@ let weather = {
             }
         ) .then((data) => this.displayWeatherInfo(data));
     },
+
     search: function () {
         this.fetchWeather(document.querySelector(".myText").value);
     },
+    
     displayWeatherInfo: function (data) {
         const {name} = data;
         const {temp} = data.main;
