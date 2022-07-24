@@ -16,7 +16,7 @@
 }
 
 #dateTime{
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
 }
 
 #timer{
@@ -40,7 +40,7 @@ body{
 }
 
 .weather{
-    padding: 10px;
+    padding: 0 10px 10px 10px;
 }
 
 .descriptionAndImage{
