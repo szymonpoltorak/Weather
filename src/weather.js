@@ -16,23 +16,32 @@ let weather = {
     search: function () {
         this.fetchWeather(document.querySelector(".myText").value);
     },
-    
+
     displayWeatherInfo: function (data) {
         const {name} = data;
         const {temp} = data.main;
         const {icon, description} = data.weather[0];
 
-        document.querySelector(".loading").style.display = "none";
-        document.querySelector(".city").innerText = name;
-        document.querySelector(".temperature").innerText = temp + "°C";
-        document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".description").innerText = description;
+        const loading = document.querySelector(".loading");
+        const city = document.querySelector(".city");
+        const temperature = document.querySelector(".temperature");
+        const weatherIcon = document.querySelector(".icon");
+        const weatherDescription = document.querySelector(".description");
+
+        loading.style.display = "none";
+        city.innerText = name;
+        temperature.innerText = temp + "°C";
+        weatherIcon.src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        weatherDescription.innerText = description;
     }
 };
 
-document.querySelector(".search").addEventListener("click", () => weather.search());
+const searchBar = document.querySelector(".myText");
+const submitButton = document.querySelector(".search");
 
-document.querySelector(".myText").addEventListener("keyup", function (event) {
+submitButton.addEventListener("click", () => weather.search());
+
+searchBar.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
         weather.search();
     }
